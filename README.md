@@ -2,10 +2,10 @@
 
 AI-powered Jira Acceptance Criteria Generator using:
 
-* FastAPI (Backend)
-* Streamlit (Frontend)
-* Ollama (Local LLM)
-* Qwen / Llama Models
+- FastAPI (Backend)
+- Streamlit (Frontend)
+- Ollama (Local LLM)
+- Qwen / Llama Models
 
 ---
 
@@ -31,24 +31,24 @@ Jira-Acceptance-Criteria-Generation/
 
 ## Features
 
-* Generate Jira Acceptance Criteria from User Stories
-* Given / When / Then format
-* Multiple User Story Support
-* Local LLM using Ollama
-* FastAPI REST API
-* Streamlit UI
+- Generate Jira Acceptance Criteria from User Stories
+- Given / When / Then format
+- Multiple User Story Support
+- Local LLM using Ollama
+- FastAPI REST API
+- Streamlit UI
 
 ---
 
 ## Prerequisites
 
-* Python 3.12+
-* Ollama
+- Python 3.12+
+- Ollama
 
 Install a model:
 
 ```bash
-ollama pull qwen3:8b
+ollama pull llama3.1:8b
 ```
 
 Verify installation:
@@ -151,13 +151,13 @@ Then a reset link should be sent to the registered email
 
 ## Future Enhancements
 
-* Jira Integration
-* Test Case Generation
-* Risk Analysis
-* Story Classification
-* Export to PDF
-* RAG using BRD/SRS Documents
-* Multi-Model Support
+- Jira Integration
+- Test Case Generation
+- Risk Analysis
+- Story Classification
+- Export to PDF
+- RAG using BRD/SRS Documents
+- Multi-Model Support
 
 ---
 
