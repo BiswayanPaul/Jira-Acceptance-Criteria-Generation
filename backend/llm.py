@@ -27,6 +27,7 @@ def chat(model, messages, temperature, max_tokens):
         )
 
     for message in messages:
+        print(f"Adding message: {message.role} - {message.content}")
         ollama_messages.append(
             {
                 "role": message.role,

@@ -31,7 +31,8 @@ with st.sidebar:
         "Model",
         [
             "llama3.1:8b",
-            "qwen3:8b"
+            "qwen3:8b",
+            "qwen3.5:2b"
         ]
     )
 
@@ -106,8 +107,7 @@ if prompt:
                         "temperature": temperature,
                         "max_tokens": max_tokens,
                         "messages": st.session_state.messages
-                    },
-                    timeout=120
+                    }
                 )
 
                 answer = response.json()["response"]
