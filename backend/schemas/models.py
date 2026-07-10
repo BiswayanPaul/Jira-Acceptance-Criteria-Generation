@@ -11,3 +11,9 @@ class ChatRequest(BaseModel):
     temperature: float
     max_tokens: int
     messages: list[Message]
+
+
+class ChatResponse(BaseModel):
+    response: str
+    # Populated only when the mermaid tool was used this turn.
+    mermaid: str | None = None
