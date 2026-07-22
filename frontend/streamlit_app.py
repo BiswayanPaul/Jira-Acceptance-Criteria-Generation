@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import re
-
+from streamlit_mermaid_interactive import mermaid
 import streamlit.components.v1 as components
 
 def render_mermaid(code: str, height: int = 500):
@@ -105,7 +105,7 @@ with st.sidebar:
         st.rerun()
 
 st.title("🤖 AI Acceptance Criteria Generator")
-st.caption("Generate professional Jira Acceptance Criteria using Local LLMs.")
+st.caption("Generate professional Jira Acceptance Criteria")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -163,9 +163,14 @@ if prompt:
                     
                     # Process and render the diagram visually
                     if mermaid_code:
-                        st.markdown("### 🌊 Process Flow")
-                        render_mermaid(mermaid_code.strip())
 
+                        st.markdown("### 🌊 Process Flow")
+
+                        mermaid(
+                            mermaid_code,
+                            theme="neutral",
+                            key="flow"
+                        )
 
             except Exception as e:
                 answer = f"""
