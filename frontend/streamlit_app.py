@@ -79,8 +79,7 @@ with st.sidebar:
     model = st.selectbox(
         "Model",
         [
-            "poolside/laguna-xs-2.1:free",
-            "poolside/laguna-xs.2:free"
+            "nvidia/nemotron-3-ultra-550b-a55b:free"
         ]
     )
 
